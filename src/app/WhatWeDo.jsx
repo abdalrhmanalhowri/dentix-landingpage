@@ -42,7 +42,7 @@ const WhatWeDo = () => {
       <Image className="decor" src={decor} alt="decor" />
       <div className="content">
         <h4>ما الذي نقدمه؟</h4>
-        <h5 className="secon">ماهي الخدمات الذي نقدمها في نظامنا</h5>
+        <h5 className="secon">ما هي الخدمات الذي نقدمها في نظامنا</h5>
 
         <div className="WhatWeDoCards">
           {list.map((i) => (

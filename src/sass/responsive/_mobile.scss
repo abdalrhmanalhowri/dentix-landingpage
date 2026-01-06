@@ -207,15 +207,15 @@
         .content {
           width: 100%;
           h6 {
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 8px;
             font-weight: 600;
           }
           p {
-            font-size: 20px;
+            font-size: 18px;
           }
           button {
-            font-size: 20px;
+            font-size: 18px;
           }
         }
         &:nth-child(1) {
@@ -324,6 +324,9 @@
     width: 95%;
     .top {
       padding: 16px 16px 0px 16px;
+      a {
+        font-size: 14px;
+      }
       img {
         width: 100px;
       }

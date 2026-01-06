@@ -8,6 +8,10 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 64px;
+    opacity: 0;
+    animation: fadeUpSoft 1.4s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
   }
 
   .decor {
@@ -29,7 +33,25 @@
       width: 100%;
       box-shadow: 0px 12px 55px rgba(0, 0, 0, 0.096);
       transition: all 0.2s linear;
+      opacity: 0;
+      animation: fadeUpSoft 1.4s ease forwards;
+      animation-timeline: view();
+      animation-range: entry 10% entry 60%;
 
+      &:has(.answer) button svg {
+        transform: rotate(180deg);
+      }
+      &:nth-child(1) {
+        animation-range: entry 10% entry 45%;
+      }
+
+      &:nth-child(2) {
+        animation-range: entry 15% entry 55%;
+      }
+
+      &:nth-child(3) {
+        animation-range: entry 20% entry 65%;
+      }
       &:hover {
         box-shadow: 0px 12px 55px rgba(0, 0, 0, 0.2);
 
@@ -46,12 +68,39 @@
         align-items: center;
         font-size: 24px;
         font-weight: 600;
+
+        svg {
+          transition: transform 0.3s ease;
+        }
       }
       .answer {
         padding: 0px 32px 32px 32px;
         font-size: 20px;
         font-weight: 500;
+        animation: expandAnswer 0.35s ease forwards;
       }
     }
+  }
+}
+
+@keyframes fadeUpSoft {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandAnswer {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
