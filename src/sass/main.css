@@ -1,0 +1,326 @@
+:root {
+  --primary-color: #1960ab;
+  --secondary-color: #d6b469;
+  --background-color: #f9fbfc;
+  --button-color: linear-gradient(to left, #1960ab, #1777dd);
+}
+
+@font-face {
+  font-family: "cairo-light";
+  src: url("../assets/fonts/Cairo-Light.ttf");
+}
+@font-face {
+  font-family: "cairo-medium";
+  src: url("../assets/fonts/Cairo-Medium.ttf");
+}
+@font-face {
+  font-family: "cairo-regular";
+  src: url("../assets/fonts/Cairo-Regular.ttf");
+}
+@font-face {
+  font-family: "cairo-Bold";
+  src: url("../assets/fonts/Cairo-Bold.ttf");
+}
+body {
+  font-family: "cairo-regular", sans-serif;
+  background-color: var(--background-color);
+  margin: 0px 120px;
+  scroll-behavior: smooth;
+}
+body button {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  height: 96px;
+}
+header img {
+  width: 144px;
+}
+header nav ul {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+header nav ul li {
+  transition: all 0.1s linear;
+}
+header nav ul li:hover {
+  color: var(--primary-color);
+  font-weight: 700;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+header button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 16px;
+  background: var(--button-color);
+  color: var(--background-color);
+  padding: 12px 24px;
+  border-radius: 1000px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--background-color);
+}
+header button:hover {
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 96px);
+  padding-top: 48px;
+  margin-bottom: 240px;
+}
+.Hero .left-side {
+  height: 100%;
+  width: 43%;
+  display: flex;
+  align-items: end;
+  overflow-y: hidden;
+  padding-right: 120px;
+  position: relative;
+}
+.Hero .left-side .doctor-img {
+  width: 100%;
+  padding-left: 50px;
+}
+.Hero .left-side::before {
+  content: "";
+  width: 90%;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+  background: var(--button-color);
+  border-radius: 1000px 1000px 100px 100px;
+  bottom: 0;
+}
+.Hero .left-side .clients {
+  position: absolute;
+  top: 75%;
+  z-index: 1;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 20px;
+  padding: 16px 48px;
+  background-color: var(--background-color);
+  border-radius: 16px;
+  box-shadow: 10px 10px 40px rgba(255, 217, 0, 0.205);
+}
+.Hero .left-side .clients .icon {
+  color: gold;
+  background-color: rgba(255, 217, 0, 0.199);
+  padding: 16px;
+  border-radius: 8px;
+}
+.Hero .left-side .clients .icon svg {
+  font-size: 32px;
+}
+.Hero .left-side .clients .texts .num {
+  font-size: 24px;
+  font-weight: 700;
+}
+.Hero .left-side .clients .texts .title {
+  color: rgb(31, 31, 31);
+}
+.Hero .content {
+  max-width: 50%;
+}
+.Hero .content h1 {
+  font-size: 4vw;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.Hero .content h1 span {
+  color: var(--primary-color);
+}
+.Hero .content p {
+  font-size: 24px;
+  color: #3b3b3b;
+  margin-bottom: 32px;
+}
+.Hero .content button {
+  background: var(--button-color);
+  color: var(--background-color);
+  font-size: 24px;
+  padding: 16px 64px;
+  border-radius: 1000px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--background-color);
+}
+.Hero .content button:hover {
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.WhoWeAre {
+  display: flex;
+  align-items: start;
+  gap: 48px;
+  margin-bottom: 240px;
+}
+.WhoWeAre .image {
+  min-width: 45%;
+  position: relative;
+}
+.WhoWeAre .image img {
+  width: 100%;
+  border-radius: 24px;
+  border-right: 8px solid var(--background-color);
+  border-bottom: 8px solid var(--background-color);
+}
+.WhoWeAre .content h3 {
+  position: relative;
+  font-size: 24px;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.WhoWeAre .content h3::after {
+  content: "";
+  height: 2px;
+  width: 85%;
+  left: 0;
+  background-color: var(--secondary-color);
+  position: absolute;
+}
+.WhoWeAre .content .des {
+  font-size: 2.2vw;
+  margin-bottom: 24px;
+}
+.WhoWeAre .content .boxes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.WhoWeAre .content .boxes .box {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  padding: 16px 0px 16px 16px;
+}
+.WhoWeAre .content .boxes .box div .title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.WhoWeAre .content .boxes .box .icon {
+  background-color: rgba(25, 96, 171, 0.1764705882);
+  padding: 16px;
+  border-radius: 8px;
+}
+.WhoWeAre .content .boxes .box .icon svg {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+.WhoWeAre .content button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 24px;
+  background: var(--button-color);
+  color: var(--background-color);
+  padding: 8px;
+  width: 300px;
+  border-radius: 1000px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--background-color);
+}
+.WhoWeAre .content button svg {
+  font-size: 32px;
+}
+.WhoWeAre .content button:hover {
+  gap: 16px;
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.WhatWeDo {
+  margin-bottom: 240px;
+}
+.WhatWeDo .background {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background: var(--button-color);
+  left: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0%, 100% 64%, 55% 88%, 0 83%);
+}
+.WhatWeDo .content {
+  padding: 50px 0px;
+}
+.WhatWeDo .content h6 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.WhatWeDo .content .WhatWeDoCards {
+  margin-left: 120px;
+  margin-right: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  gap: 20px;
+}
+.WhatWeDo .content .WhatWeDoCard {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  padding: 40px;
+  transition: all 0.2s linear;
+  gap: 20px;
+}
+.WhatWeDo .content .WhatWeDoCard .icon {
+  background-color: var(--card-background);
+  width: 120px;
+  height: 86px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+  padding: 15px;
+}
+.WhatWeDo .content .WhatWeDoCard .icon img {
+  width: 80%;
+}
+.WhatWeDo .content .WhatWeDoCard .texts .title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.WhatWeDo .content .WhatWeDoCard .texts .para {
+  font-size: 24px;
+  color: #3b3b3b;
+}
+.WhatWeDo .content .WhatWeDoCard:hover {
+  scale: 1.01;
+  box-shadow: 0px 12px 55px rgba(0, 0, 0, 0.2);
+  color: var(--secondary-color);
+}
+.WhatWeDo .content h4 {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  margin-bottom: 8px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "cairo-light";
+  src: url("../assets/fonts/Cairo-Light.ttf");
+}
+@font-face {
+  font-family: "cairo-medium";
+  src: url("../assets/fonts/Cairo-Medium.ttf");
+}
+@font-face {
+  font-family: "cairo-regular";
+  src: url("../assets/fonts/Cairo-Regular.ttf");
+}
+@font-face {
+  font-family: "cairo-Bold";
+  src: url("../assets/fonts/Cairo-Bold.ttf");
+}
+
+body {
+  font-family: "cairo-regular", sans-serif;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  button {
+    cursor: pointer;
+  }
+}

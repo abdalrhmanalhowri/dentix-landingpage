@@ -1,0 +1,18 @@
+@use "variables/colors";
+
+@use "globals";
+
+@use "layout/Navbar";
+@use "layout/Footer";
+
+@use "app/Hero";
+@use "app/WhoWeAre";
+@use "app/WhatWeDo";
+@use "app/HowItWorks";
+@use "app/FAQ";
+@use "app/ContactUs";
+
+@use "responsive/Medium";
+@use "responsive/Small";
+@use "responsive/tablet";
+@use "responsive/mobile";
