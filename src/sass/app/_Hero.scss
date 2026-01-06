@@ -8,7 +8,6 @@ $header-height: 96px;
   width: 1440px;
   margin: auto;
   margin-bottom: 240px;
-  animation: fadeUp 0.8s ease-out;
 
   .decor {
     position: absolute;
@@ -27,7 +26,7 @@ $header-height: 96px;
     .doctor-img {
       width: 100%;
       padding-left: 50px;
-      animation: fadeUp 0.9s ease-out both;
+      animation: fadeUpHero 0.9s ease-out both;
       animation-delay: 0.2s;
     }
     &::before {
@@ -79,7 +78,7 @@ $header-height: 96px;
   }
   .content {
     max-width: 50%;
-    animation: fadeUp 0.8s ease-out both;
+    animation: fadeUpHero 0.8s ease-out both;
     animation-delay: 0.3s;
 
     h1 {
@@ -88,7 +87,7 @@ $header-height: 96px;
       margin-bottom: 32px;
       span {
         color: var(--primary-color);
-        animation: fadeUp 0.8s ease-out both;
+        animation: fadeUpHero 0.8s ease-out both;
         animation-delay: 0.4s;
       }
     }
@@ -96,7 +95,7 @@ $header-height: 96px;
       font-size: 24px;
       color: #3b3b3b;
       margin-bottom: 32px;
-      animation: fadeUp 0.8s ease-out both;
+      animation: fadeUpHero 0.8s ease-out both;
       animation-delay: 0.55s;
     }
 
@@ -108,7 +107,7 @@ $header-height: 96px;
       border-radius: 1000px;
       transition: all 0.2s ease-in-out;
       border: 2px solid var(--background-color);
-      animation: fadeUp 0.8s ease-out both;
+      animation: fadeUpHero 0.8s ease-out both;
       animation-delay: 0.7s;
 
       &:hover {
@@ -120,7 +119,7 @@ $header-height: 96px;
   }
 }
 
-@keyframes fadeUp {
+@keyframes fadeUpHero {
   from {
     opacity: 0;
     transform: translateY(24px);
