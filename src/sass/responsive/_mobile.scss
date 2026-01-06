@@ -22,7 +22,7 @@
   }
   .Hero {
     width: 95%;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     flex-direction: column-reverse;
     align-items: end;
     padding-top: 24px;
@@ -52,7 +52,7 @@
         width: 75%;
         height: 350px;
         top: 100%;
-        left: -20%;
+        left: -25%;
         transform: translateY(-100%);
       }
 
@@ -100,13 +100,13 @@
 
   // Who We Are section
   .WhoWeAre {
-    width: 90%;
-    margin-bottom: 120px;
+    width: 95%;
+    margin-bottom: 80px;
     flex-direction: column;
 
     .decor {
       width: 600px;
-      top: 175vh;
+      top: 185vh;
     }
 
     .image {
@@ -117,11 +117,11 @@
         font-size: 20px;
         &::after {
           content: "";
-          width: 85%;
+          width: 75%;
         }
       }
       .des {
-        font-size: 24px;
+        font-size: 20px;
       }
       .boxes {
         flex-direction: column;
@@ -148,19 +148,37 @@
 
   // What We Do section
   .WhatWeDo {
-    width: 90%;
+    width: 95%;
     margin-bottom: 120px;
 
     .content {
       h4 {
-        font-size: 32px;
+        font-size: 28px;
       }
       h5 {
-        font-size: 20px;
+        font-size: 18px;
       }
       .WhatWeDoCards {
         display: flex;
         flex-direction: column;
+
+        .WhatWeDoCard {
+          padding: 32px;
+
+          .icon {
+            font-size: 24px;
+            padding: 15px;
+          }
+
+          .texts {
+            .title {
+              font-size: 20px;
+            }
+            .para {
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
     .decor {
@@ -171,14 +189,14 @@
 
   // How It Works section
   .HowItWorks {
-    width: 90%;
+    width: 95%;
     margin-bottom: 120px;
 
     h4 {
-      font-size: 32px;
+      font-size: 28px;
     }
     h5 {
-      font-size: 20px;
+      font-size: 18px;
     }
     .steps {
       margin-top: 140px;
@@ -232,6 +250,7 @@
               content: "";
               width: 300px;
               height: 300px;
+              right: 0;
             }
 
             img {
@@ -245,10 +264,10 @@
 
   // FAQ section
   .FAQ {
-    width: 90%;
+    width: 95%;
     margin-bottom: 160px;
     h4 {
-      font-size: 32px;
+      font-size: 28px;
     }
     .Questions {
       width: 100%;
@@ -256,6 +275,13 @@
         button {
           font-size: 20px;
           padding: 24px;
+          font-size: 16px;
+          padding: 16px;
+        }
+
+        .answer {
+          font-size: 14px;
+          padding: 0px 16px 16px 16px;
         }
       }
     }
@@ -295,6 +321,20 @@
   }
 
   footer {
-    width: 90%;
+    width: 95%;
+    .top {
+      padding: 16px 16px 0px 16px;
+      img {
+        width: 100px;
+      }
+    }
+    .bottom {
+      padding: 32px 16px;
+      flex-direction: column;
+      gap: 24px;
+      .copyright {
+        font-size: 12px;
+      }
+    }
   }
 }

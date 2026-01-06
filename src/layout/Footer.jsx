@@ -22,7 +22,7 @@ const Footer = () => {
             <FaXTwitter />
           </li>
         </ul>
-        <div className="copyright">© 2025 عيادة د. جميع الحقوق محفوظة.</div>
+        <div className="copyright">© 2025 Dentix جميع الحقوق محفوظة .</div>
       </div>
     </footer>
   );
